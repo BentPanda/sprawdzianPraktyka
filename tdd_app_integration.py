@@ -8,7 +8,7 @@ class TestIntegration(unittest.TestCase):
         users.clear()
 
     def test_user_creation(self):
-        response = self.app.post('/users', json={"name": "Jan", "lastname": "Kowalski"})
+        response = self.app.post('/users', json={"name": "Wojciech", "lastname": "Oczkowski"})
         self.assertEqual(response.status_code, 201)
 
 
